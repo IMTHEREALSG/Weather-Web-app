@@ -62,10 +62,6 @@ function WeatherCard() {
     fetchData();
   }, []);
 
-  if (weather.loading) {
-    return <div className="text-center">Loading...</div>;
-  }
-
   if (weather.error) {
     return <div className="text-center text-red-500">Error loading weather data</div>;
   }

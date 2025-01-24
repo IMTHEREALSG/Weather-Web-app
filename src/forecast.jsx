@@ -70,9 +70,6 @@ export default function Forecast({weather}) {
         return result;
     };
 
-    if (!data || !data.weather) {
-        return <div>Loading...</div>;
-    }
 
     return (
         <div className="text-center p-4">
